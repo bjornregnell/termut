@@ -1,4 +1,5 @@
 //> using scala "3.2"
+//> using lib "org.jline:jline:3.21.0"
 package termut
 
 /** A terminal with history that can add completions */
