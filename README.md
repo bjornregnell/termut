@@ -4,7 +4,17 @@ Simple terminal utility for Scala 3 based on jline3.
 
 Example usage:
 ```scala
-import termut.*
+import termut.{NonBlockingRawTerminal, Terminal}
+
+@main def ExampleNiceTerminal =
+  import Terminal.*
+  setCompletions(Seq("quit", "goodbye"), Seq())
+  put("You have history and complete on 'quit' and 'goodbye'")
+  put("You have history and complete on 'quit' and 'goodbye'")
+  val input = get("prompt> ", default = "hello terminal")
+  put(s"You wrote: $input")
+  val secret = getSecret()
+  put(s"Your secret: $secret") 
 
 @main def ExampleNonBlocking = 
   println(s"start typing like speedy gonzales")
