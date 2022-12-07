@@ -25,7 +25,7 @@ import termut.{NonBlockingRawTerminal, Terminal}
   println(s"start typing like speedy gonzales")
   val nbt = NonBlockingRawTerminal()
   while true do
-    nbt.awaitChar(timeoutInMillis = 10) // low poll rate to not overheat cpu
+    nbt.awaitChar(timeoutInMillis = 10) // low poll rate: avoid hot cpu
     val i: Int = nbt.lastTyped
     if i >= 0 then println(s"you typed: $i ${i.toChar}")
 ```
