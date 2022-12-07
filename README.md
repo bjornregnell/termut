@@ -3,7 +3,9 @@
 Simple terminal utility for Scala 3 based on jline3.
 
 Example usage:
-```
+```scala
+import termut.*
+
 @main def ExampleNonBlocking = 
   println(s"start typing like speedy gonzales")
   val nbt = NonBlockingRawTerminal()
