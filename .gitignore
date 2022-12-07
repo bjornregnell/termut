@@ -2,3 +2,5 @@
 *.log
 .metals
 .vscode
+.scala-build
+target
