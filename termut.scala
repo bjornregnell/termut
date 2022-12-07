@@ -26,7 +26,9 @@ object Terminal:
 
   def isOk(msg: String = ""): Boolean = get(s"$msg (Y/n): ") == "Y"
 
-  def put(s: String): Unit = terminal.writer().println(s)
+  def put(s: String): Unit = 
+    terminal.writer.println(s)
+    terminal.writer.flush
 
   def removeCompletions(): Unit = reader.setCompleter(null)
 
