@@ -10,7 +10,7 @@ import termut.{NonBlockingRawTerminal, Terminal}
   import Terminal.*
   setCompletions(Seq("quit", "goodbye"), Seq())
   put("You have history and complete on 'quit' and 'goodbye'")
-  put("You have history and complete on 'quit' and 'goodbye'")
+  put("You can use normal linux shortcuts such as Ctrl+A, Ctrl+K")
   val input = get("prompt> ", default = "hello terminal")
   put(s"You wrote: $input")
   val secret = getSecret()
