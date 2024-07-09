@@ -4,9 +4,9 @@ Simple terminal utility for Scala 3 based on jline3.
 
 Example usage with [scala-cli](https://scala-cli.virtuslab.org) - save in some `.scala` file and `scala-cli run .`
 ```scala
-//> using lib "termut:termut:0.0.1,url=https://github.com/bjornregnell/termut/releases/download/v0.0.1/termut_3-0.0.1.jar"
-//> using lib "org.jline:jline:3.21.0"
-//> using scala "3.2"
+//> using dep "termut:termut:0.1.0,url=https://github.com/bjornregnell/termut/releases/download/v0.1.0/termut_3-0.1.0.jar"
+//> using dep "org.jline:jline:3.26.2"
+//> using scala 3
 
 import termut.{NonBlockingRawTerminal, Terminal}
 
@@ -33,5 +33,5 @@ Note: This api is still experimental and the api will change.
 
 ## How to build
 ```
-scala-cli package . --library -o termut_3-0.0.1.jar
+scala-cli package . --library -o termut_3-0.1.0.jar
 ```
