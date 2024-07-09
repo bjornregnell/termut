@@ -32,6 +32,8 @@ import termut.{NonBlockingRawTerminal, Terminal}
 Note: This api is still experimental and the api will change.
 
 ## How to build
+
 ```
 scala-cli package . --library -o termut_3-0.1.0.jar
+scala-cli package . --assembly -o termut_3-assembly-0.1.0.jar --preamble=false
 ```
